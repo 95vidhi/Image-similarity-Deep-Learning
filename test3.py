@@ -388,7 +388,7 @@ def find_features(document):
 
 out_ = {}
 
-'''
+
 #CODE THAT DOWNLOADES IMAGES TO ../IMAGES
 for i in range(no_of_rows):
     url = imageUrlStr2[i]
@@ -411,9 +411,9 @@ for i in range(no_of_rows):
         print status,
 
     f.close()
-'''
+
 if __name__ == '__main__':
-    '''
+    
     #CODE USED TO EXTRACT FEATURE VECTORS OF IMAGES AND SAVE THEM, THUS IT HAS BEEN COMMENTED NOW
     #IT USES VGG-16 PRE TRAINED MODEL TO EXTRACT FEATURES
 
@@ -444,7 +444,7 @@ if __name__ == '__main__':
 
     np.savez('features210toend.npz',a=features)
     print " Feature extraction done"
-    '''    
+    
 
     data = np.load('features0to29.npz')
     features = data['a']
